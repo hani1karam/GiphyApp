@@ -8,4 +8,4 @@ I choose to use clean Architecture
 
 * Digram 
 
-  <img align="left" width="600" height="600" img src="Screen Shot 2022-03-14 at 10.57.01 PM.png">
+  <img align="center" width="600" height="600" img src="Screen Shot 2022-03-14 at 10.57.01 PM.png">
