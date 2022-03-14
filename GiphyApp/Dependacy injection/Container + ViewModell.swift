@@ -12,13 +12,13 @@ extension Container {
     func registerViewModel() {
         autoregister(GiphyViewModel.self, initializer: GiphyViewModel.init)
         autoregister(GiphyUseCase.self, initializer: GiphyUseCase.init)
-
     }
-     func registerCoordinator() {
+    func registerCoordinator() {
         autoregister(AppCoordinator.self, initializer: AppCoordinator.init)
         autoregister(MoviesViewCoordinator.self, initializer: MoviesViewCoordinator.init)
         autoregister(GiphyRepo.self, initializer: GiphyRepoImpl.init)
+        autoregister(GiphyRemoteDataSources.self, initializer: GiphyRemoteDataSourcesImpl.init)
         autoregister(DataProviderProtocol.self, initializer: APIClient.init)
- 
+        
     }
 }

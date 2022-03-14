@@ -15,7 +15,7 @@ class MoviesViewCoordinator:BaseCoordinator {
     
     init(viewModel: GiphyViewModel) {
         self.viewModel = viewModel
-     }
+    }
     override func start() -> UIViewController {
         let viewController = HomeVC(nibName: "HomeVC", bundle: nil)
         let appDelegate = UIApplication.shared.delegate as? AppDelegate

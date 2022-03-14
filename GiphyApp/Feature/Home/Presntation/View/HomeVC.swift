@@ -35,9 +35,11 @@ class HomeVC: UIViewController {
         titleView.addSubview(imageView)
         self.navigationItem.titleView = titleView
     }
+    
     func showCatrogy(){
         homeCV.register(UINib(nibName: HomeVC.cellIdentifierDemoCell, bundle: nil), forCellWithReuseIdentifier: HomeVC.cellIdentifierDemoCell)
     }
+    
     func subscribeToResponse() {
         self.branchesViewModel?.featchGiphy().subscribe(onNext:{[weak self] dataItem in
             Observable.of(dataItem.data ?? []).bind(to: (self?.homeCV.rx
@@ -51,4 +53,3 @@ class HomeVC: UIViewController {
     }
     
 }
-
