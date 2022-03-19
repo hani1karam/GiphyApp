@@ -8,9 +8,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class HomeVC: UIViewController {
-    @IBOutlet weak var homeCV: UICollectionView!
+class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var homeCV: UICollectionView!
     static let cellIdentifierDemoCell = "HomeCollectionViewCell"
     public var branchesViewModel:GiphyViewModel?
     lazy var disposeBag: DisposeBag = {
@@ -50,6 +50,18 @@ class HomeVC: UIViewController {
                 
             }.disposed(by: self?.disposeBag ?? DisposeBag())
         })
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: (collectionView.frame.width * 0.5) - 10 , height: 259)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
 }

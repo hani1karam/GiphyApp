@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D73F47C627DA98050004EB78 /* GiphyRemoteDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F47C527DA98050004EB78 /* GiphyRemoteDataSources.swift */; };
-		D73F48C727DD149B0004EB78 /* NetworkManagerTests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = D73F48C627DD149B0004EB78 /* NetworkManagerTests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D73F492227DFDE500004EB78 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F492127DFDE500004EB78 /* NetworkManager.framework */; };
-		D73F492327DFDE500004EB78 /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D73F492127DFDE500004EB78 /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D73F495627E10D8A0004EB78 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73F495527E10D8A0004EB78 /* NetworkManager.framework */; };
+		D73F495727E10D8A0004EB78 /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D73F495527E10D8A0004EB78 /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D781A05F27BFE1EE00806FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781A05E27BFE1EE00806FC0 /* AppDelegate.swift */; };
 		D781A06927BFE1EE00806FC0 /* GiphyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D781A06727BFE1EE00806FC0 /* GiphyApp.xcdatamodeld */; };
 		D781A06B27BFE1F100806FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D781A06A27BFE1F100806FC0 /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 		D7DDB44327C3C466003481B8 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DDB44127C3C465003481B8 /* HomeCollectionViewCell.xib */; };
 		D7DDB44427C3C466003481B8 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB44227C3C466003481B8 /* HomeCollectionViewCell.swift */; };
 		D7DDB4BC27C3CEC9003481B8 /* GiphyRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB4BB27C3CEC9003481B8 /* GiphyRepo.swift */; };
-		D7DDB4CA27C3D12D003481B8 /* HomeVC + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB4C927C3D12D003481B8 /* HomeVC + Extenstion.swift */; };
 		D7DDB4F827C3D388003481B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D7DDB4F727C3D388003481B8 /* RxCocoa */; };
 		D7DDB50327C3D6EF003481B8 /* Extenstion + UIVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DDB50227C3D6EF003481B8 /* Extenstion + UIVIEW.swift */; };
 /* End PBXBuildFile section */
@@ -55,24 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D73F48C827DD149C0004EB78 /* Embed PlugIns */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				D73F48C727DD149B0004EB78 /* NetworkManagerTests.xctest in Embed PlugIns */,
-			);
-			name = "Embed PlugIns";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D73F492427DFDE510004EB78 /* Embed Frameworks */ = {
+		D73F495827E10D8B0004EB78 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D73F492327DFDE500004EB78 /* NetworkManager.framework in Embed Frameworks */,
+				D73F495727E10D8A0004EB78 /* NetworkManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +72,7 @@
 		D73F48C127DD14800004EB78 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73F48C627DD149B0004EB78 /* NetworkManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NetworkManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73F492127DFDE500004EB78 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73F495527E10D8A0004EB78 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D781A05B27BFE1EE00806FC0 /* GiphyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D781A05E27BFE1EE00806FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D781A06827BFE1EE00806FC0 /* GiphyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiphyApp.xcdatamodel; sourceTree = "<group>"; };
@@ -113,7 +101,6 @@
 		D7DDB44127C3C465003481B8 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D7DDB44227C3C466003481B8 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7DDB4BB27C3CEC9003481B8 /* GiphyRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiphyRepo.swift; path = ../../../../../../NetworkManager/GiphyRepo.swift; sourceTree = "<group>"; };
-		D7DDB4C927C3D12D003481B8 /* HomeVC + Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HomeVC + Extenstion.swift"; path = "../../../../../../NetworkManager/HomeVC + Extenstion.swift"; sourceTree = "<group>"; };
 		D7DDB50227C3D6EF003481B8 /* Extenstion + UIVIEW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extenstion + UIVIEW.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DDB4F827C3D388003481B8 /* RxCocoa in Frameworks */,
-				D73F492227DFDE500004EB78 /* NetworkManager.framework in Frameworks */,
+				D73F495627E10D8A0004EB78 /* NetworkManager.framework in Frameworks */,
 				D7DDB2EB27C06738003481B8 /* Kingfisher in Frameworks */,
 				D7DDB43527C3C313003481B8 /* IQKeyboardManagerSwift in Frameworks */,
 				D7DDB2DB27C065EF003481B8 /* Swinject in Frameworks */,
@@ -195,6 +182,7 @@
 		D7DDB2BB27BFFB77003481B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D73F495527E10D8A0004EB78 /* NetworkManager.framework */,
 				D73F492127DFDE500004EB78 /* NetworkManager.framework */,
 				D73F48C627DD149B0004EB78 /* NetworkManagerTests.xctest */,
 				D73F48C127DD14800004EB78 /* NetworkManager.framework */,
@@ -317,7 +305,6 @@
 		D7DDB39B27C13E48003481B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7DDB4C927C3D12D003481B8 /* HomeVC + Extenstion.swift */,
 				D7DDB43827C3C426003481B8 /* cell */,
 				D7DDB39D27C13E5C003481B8 /* HomeVC.swift */,
 				D7DDB39E27C13E5C003481B8 /* HomeVC.xib */,
@@ -386,8 +373,7 @@
 				D781A05727BFE1EE00806FC0 /* Sources */,
 				D781A05827BFE1EE00806FC0 /* Frameworks */,
 				D781A05927BFE1EE00806FC0 /* Resources */,
-				D73F48C827DD149C0004EB78 /* Embed PlugIns */,
-				D73F492427DFDE510004EB78 /* Embed Frameworks */,
+				D73F495827E10D8B0004EB78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -502,7 +488,6 @@
 			files = (
 				D7DDB3B827C14079003481B8 /* AppCoordinator.swift in Sources */,
 				D7DDB38D27C13292003481B8 /* GiphyUseCase.swift in Sources */,
-				D7DDB4CA27C3D12D003481B8 /* HomeVC + Extenstion.swift in Sources */,
 				D7DDB4BC27C3CEC9003481B8 /* GiphyRepo.swift in Sources */,
 				D7DDB50327C3D6EF003481B8 /* Extenstion + UIVIEW.swift in Sources */,
 				D7DDB3BD27C140FC003481B8 /* RegisterDependencies.swift in Sources */,
@@ -672,6 +657,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SB6MTB7YS3;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = /Users/hanykaram/Documents/GiphyApp/GiphyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -692,6 +678,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SB6MTB7YS3;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = /Users/hanykaram/Documents/GiphyApp/GiphyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
