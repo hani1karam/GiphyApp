@@ -1,0 +1,10 @@
+workflows:
+  Giphy_workflow:
+    name: Giphy Pipeline
+    scripts:
+      - name: CICD Started
+        script: echo "Welcome to your CICD set up"
+      publishing:
+      email:
+       recipients:
+         - hanykaram63@gmail.com
